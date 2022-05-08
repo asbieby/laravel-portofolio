@@ -10,9 +10,6 @@ class BukuController extends Controller
     public function index()
   {
      $buku = DB::table('buku')->get();
-        
-     return response()->json([
-         'buku' => $buku
-     ], 200);
+    return response()->json($buku);
   }
 }
