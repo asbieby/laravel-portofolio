@@ -26,5 +26,6 @@ use App\Http\Controllers\BukuController;
 
 
 Route::get('/', [BukuController::class, 'index']);
+Route::get('/ok', [BukuController::class, 'index1']);
 
 

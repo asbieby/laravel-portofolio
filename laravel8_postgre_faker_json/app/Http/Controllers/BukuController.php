@@ -9,7 +9,13 @@ class BukuController extends Controller
 {
     public function index()
   {
-     $buku = DB::table('buku')->get();
+     $buku = DB::table('employees')->get();
+    return response()->json($buku);
+  }
+
+   public function index1()
+  {
+     $buku = DB::table('migrations')->get();
     return response()->json($buku);
   }
 }

@@ -9,7 +9,7 @@ class TestController extends Controller
 {
     public function index()
     {
-        $response = Http::get('http://localhost/')->paginate(5);
+        $response = Http::get('http://localhost/');
         $data = $response->json();
         // return view('index', compact('data'));
         return view('index',['data'=>$data]);
