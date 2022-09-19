@@ -9,13 +9,13 @@ class BukuController extends Controller
 {
     public function index()
   {
-     $buku = DB::table('employees')->get();
+     $buku = DB::table('lra_CSV')->get();
     return response()->json($buku);
   }
 
    public function index1()
   {
-     $buku = DB::table('migrations')->get();
+     $buku = DB::table('lra_CSV')->get();
     return response()->json($buku);
   }
 }
